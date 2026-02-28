@@ -47,6 +47,30 @@ Select 2 distinctive Google Fonts during Phase 2 (after reading design-tokens.js
 
 **NEVER use Inter, Roboto, Arial, or system defaults.**
 
+## UI Components (shadcn/ui)
+
+Pre-installed shadcn/ui components are available in `src/components/ui/`:
+
+| Component | Import | Use for |
+|-----------|--------|---------|
+| `Button` | `@/components/ui/button` | All interactive buttons (variants: default, outline, ghost, secondary, destructive, link) |
+| `Card`, `CardHeader`, `CardTitle`, `CardDescription`, `CardContent`, `CardFooter` | `@/components/ui/card` | Content containers, dashboard panels |
+| `Badge` | `@/components/ui/badge` | Status labels, tags, counts |
+| `Input` | `@/components/ui/input` | Text inputs, search fields |
+| `Label` | `@/components/ui/label` | Form field labels |
+| `Select`, `SelectTrigger`, `SelectContent`, `SelectItem`, etc. | `@/components/ui/select` | Dropdown selects |
+| `Separator` | `@/components/ui/separator` | Horizontal/vertical dividers |
+| `Tabs`, `TabsList`, `TabsTrigger`, `TabsContent` | `@/components/ui/tabs` | Tabbed navigation |
+
+All components use the project's CSS variable-based theme automatically (via `tailwind.config.ts` aliases).
+
+Use the `cn()` utility from `@/lib/utils` for conditional class merging:
+```typescript
+import { cn } from "@/lib/utils";
+```
+
+**Prefer these components over custom HTML** — they handle accessibility, keyboard navigation, and theme consistency automatically.
+
 ## Ecosystem Integration
 
 The template includes `src/lib/ecosystem.ts` (ecosystem client) and
