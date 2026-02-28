@@ -3,11 +3,22 @@
 This file provides guidance to Claude Code when working on child applications
 created from the Portal v6 app template.
 
-## Design System
+## Design Skills (READ BEFORE IMPLEMENTING)
 
-**CRITICAL:** Read `.claude/skills/portal-design/SKILL.md` before implementing
-any components or pages. All frontend work must follow the portal-design skill
-guidelines to ensure distinctive, themed interfaces.
+This project includes two design skills that MUST guide all frontend work:
+
+1. **frontend-design** (.claude/skills/frontend-design/SKILL.md)
+   Enhanced design skill from Impeccable with 7 reference files covering typography,
+   color, spatial design, motion, interaction, responsive design, and UX writing.
+   Read the SKILL.md and consult relevant reference files before implementing.
+
+2. **portal-theme** (.claude/skills/portal-theme/SKILL.md)
+   Portal-specific constraints. ALL styling must use design tokens from
+   public/design-tokens.json via CSS variables. Contains creative direction
+   briefs for each Penpot theme. Check the anti-patterns list - these are
+   build failures.
+
+## Critical Design Constraints
 
 ## Project Structure
 
