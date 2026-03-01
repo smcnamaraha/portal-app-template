@@ -5,7 +5,7 @@ created from the Portal v6 app template.
 
 ## Design Skills (READ BEFORE IMPLEMENTING)
 
-This project includes two design skills that MUST guide all frontend work:
+This project includes four design skills that MUST guide all frontend work:
 
 1. **frontend-design** (.claude/skills/frontend-design/SKILL.md)
    Enhanced design skill from Impeccable with 7 reference files covering typography,
@@ -15,8 +15,15 @@ This project includes two design skills that MUST guide all frontend work:
 2. **portal-theme** (.claude/skills/portal-theme/SKILL.md)
    Portal-specific constraints. ALL styling must use design tokens from
    public/design-tokens.json via CSS variables. Contains creative direction
-   briefs for each Penpot theme. Check the anti-patterns list - these are
-   build failures.
+   briefs for each theme. Check the anti-patterns list — these are build failures.
+
+3. **baseline-ui** (.claude/skills/baseline-ui/SKILL.md)
+   Enforces an opinionated UI baseline. Rules covering components, interaction,
+   animation, typography, layout, and design. Apply to all UI work.
+
+4. **fixing-accessibility** (.claude/skills/fixing-accessibility/SKILL.md)
+   Accessibility rules covering names, keyboard access, focus, semantics, forms,
+   contrast, and media. Apply when building or modifying interactive UI.
 
 ## Critical Design Constraints
 
@@ -27,7 +34,7 @@ This is a Next.js 15 App Router template with:
 - `src/components/` — React components
 - `src/lib/` — Shared utilities and ecosystem client
 - `src/styles/theme.css` — Design token CSS variables
-- `public/design-tokens.json` — Theme tokens from Penpot
+- `public/design-tokens.json` — Theme tokens from Portal design system
 
 ## Design Tokens
 

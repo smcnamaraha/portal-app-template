@@ -1,7 +1,7 @@
 ---
 name: portal-theme
 description: >
-  Portal v6 theme constraint layer. Ensures all frontend styling uses Penpot
+  Portal v6 theme constraint layer. Ensures all frontend styling uses Portal
   design tokens from public/design-tokens.json via CSS variables in theme.css.
   Provides per-theme creative direction briefs. Auto-invoked alongside
   frontend-design skill during all component and page implementation work.
@@ -18,7 +18,7 @@ tokens — never arbitrary values.
 All styling flows through this chain:
 
 ```
-Penpot Theme → design-tokens.json → theme.css (CSS vars) → Tailwind config → Components
+Portal Design System → design-tokens.json → theme.css (CSS vars) → Tailwind config → Components
 ```
 
 ### Hard Rules
