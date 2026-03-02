@@ -21,3 +21,19 @@ body {
    Custom utilities — ADD YOUR STYLES BELOW
    Glass morphism, animations, component styles, etc.
    ============================================ */
+
+/* ============================================
+   Landing page ambient animations
+   ============================================ */
+
+/* All themes: radial glow using --color-primary */
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.06; }
+  50%       { opacity: 0.22; }
+}
+
+/* READY state: settle pulse — slower, calmer */
+@keyframes settle-pulse {
+  0%, 100% { opacity: 0.04; }
+  50%       { opacity: 0.14; }
+}
