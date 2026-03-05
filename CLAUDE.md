@@ -85,9 +85,9 @@ The template includes `src/lib/ecosystem.ts` (ecosystem client) and
 for future ecosystem integration.
 
 If this app publishes or consumes ecosystem streams:
-1. Create `src/lib/ecosystem-manifest.ts` with stream declarations
-2. Call `initEcosystem(ECOSYSTEM_MANIFEST)` in root layout server-side init
-3. Use `ecosystem.publish()` and `ecosystem.read()` as needed
+1. Update `src/lib/ecosystem-manifest.ts` — fill in the `publishes` and `consumes` arrays (file already exists with empty placeholders)
+2. `initEcosystem(ECOSYSTEM_MANIFEST)` is already called in root layout — no changes needed there
+3. Use `ecosystem.publish()` and `ecosystem.read()` as needed in feature code
 
 Environment variables are auto-injected by portal — DO NOT hardcode.
 
