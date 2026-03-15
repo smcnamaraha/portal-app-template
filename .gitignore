@@ -1,21 +1,7 @@
-# dependencies
 node_modules/
-
-# next.js
 .next/
 out/
-
-# production
-build/
-
-# env files
-.env.local
-.env*.local
-
-# typescript
-tsconfig.tsbuildinfo
-
-# misc
+dist/
+.env*
 *.log
 .DS_Store
-*.pem

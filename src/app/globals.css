@@ -1,39 +1,3 @@
-/* ============================================
-   CRITICAL: Do not remove these Tailwind directives
-   They must remain at the top of this file
-   ============================================ */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* ============================================
-   Base styles from design tokens
-   These are applied via theme.css CSS variables
-   ============================================ */
-body {
-  font-family: var(--font-body, sans-serif);
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  min-height: 100vh;
-}
-
-/* ============================================
-   Custom utilities — ADD YOUR STYLES BELOW
-   Glass morphism, animations, component styles, etc.
-   ============================================ */
-
-/* ============================================
-   Landing page ambient animations
-   ============================================ */
-
-/* All themes: radial glow using --color-primary */
-@keyframes glow-pulse {
-  0%, 100% { opacity: 0.06; }
-  50%       { opacity: 0.22; }
-}
-
-/* READY state: settle pulse — slower, calmer */
-@keyframes settle-pulse {
-  0%, 100% { opacity: 0.04; }
-  50%       { opacity: 0.14; }
-}
